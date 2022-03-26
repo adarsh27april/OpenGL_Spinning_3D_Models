@@ -1,5 +1,5 @@
 #include <GL/gl.h>
-#include <GL/glut.h> // freeglut.h might be a better alternative, if available.
+#include <GL/glut.h>
 #include <stdio.h>
 #include <math.h>
 
@@ -19,62 +19,6 @@ void Spin()
         d = 0;
     glutPostRedisplay();
 }
-
-/*
-void display()
-{ // Display function will draw the image.
-
-    GLfloat rV[8][3], r;
-    r = d * 3.14 / 180;
-
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-
-    glBegin(GL_POLYGON);
-    // Triangle 1
-    glColor3f(1, 0, 0);
-    glVertex3f(0, 1, 0); // V0(red)
-    // glColor3f(0, 1, 0);
-    glVertex3f(-1, -1, 1); // V1(green)
-    // glColor3f(0, 0, 1);
-    glVertex3f(1, -1, 1); // V2(blue)
-    glEnd();
-
-    glBegin(GL_POLYGON);
-    // Triangle 2
-    // glColor3f(1, 0, 0);
-    glColor3f(0, 0, 1);
-    glVertex3f(0, 1, 0); // V0(red)
-    // glColor3f(0, 0, 1);
-    glVertex3f(1, -1, 1); // V2(blue)
-    // glColor3f(0, 1, 0);
-    glVertex3f(1, -1, -1); // V3(green)
-    glEnd();
-
-    glBegin(GL_POLYGON);
-    // Triangle 3
-    // glColor3f(1, 0, 0);
-    glColor3f(0, 0, 1);
-    glVertex3f(0, 1, 0); // V0(red)
-    // glColor3f(0, 1, 0);
-    glVertex3f(1, -1, -1); // V3(green)
-    // glColor3f(0, 0, 1);
-    glVertex3f(-1, -1, -1); // V4(blue)
-    glEnd();
-
-    glBegin(GL_POLYGON);
-    // Triangle 4
-    // glColor3f(1, 0, 0);
-    glColor3f(0, 1, 0);
-    glVertex3f(0, 1, 0); // V0(red)
-    // glColor3f(0, 0, 1);
-    glVertex3f(-1, -1, -1); // V4(blue)
-    // glColor3f(0, 1, 0);
-    glVertex3f(-1, -1, 1); // V1(green)
-    glEnd();
-
-    glutSwapBuffers();
-}
-*/
 
 void Face(GLfloat A[], GLfloat B[], GLfloat C[])
 {

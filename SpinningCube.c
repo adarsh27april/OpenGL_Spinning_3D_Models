@@ -33,17 +33,17 @@ void Face(GLfloat A[], GLfloat B[], GLfloat C[], GLfloat D[])
 void Cube(GLfloat V0[], GLfloat V1[], GLfloat V2[], GLfloat V3[], GLfloat V4[], GLfloat V5[], GLfloat V6[], GLfloat V7[])
 {
     glColor3f(1, 0, 0);
-    Face(V0, V1, V2, V3); // Front
+    Face(V0, V1, V2, V3);
     glColor3f(0, 1, 0);
-    Face(V4, V5, V6, V7); // Back
+    Face(V4, V5, V6, V7);
     glColor3f(0, 0, 1);
-    Face(V0, V4, V7, V3); // Left
+    Face(V0, V4, V7, V3);
     glColor3f(1, 1, 0);
-    Face(V1, V5, V6, V2); // Right
+    Face(V1, V5, V6, V2);
     glColor3f(1, 0, 1);
-    Face(V2, V3, V7, V6); // Bot
+    Face(V2, V3, V7, V6);
     glColor3f(0, 1, 1);
-    Face(V0, V1, V5, V4); // Top
+    Face(V0, V1, V5, V4);
 }
 
 void display()
